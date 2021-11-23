@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "webpack --mode development --open",
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p",
     "build": "webpack --mode production",
     "start:css": "node-sass sass/main.scss dist/css/style.css",
     "start:webpack": "webpack serve --mode development --open",
