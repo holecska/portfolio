@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="400px" height="150px" viewBox="0 0 400 150"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <!-- <desc>Example rect02 - rounded rectangles</desc> -->
+
+  <g transform="translate(5 5)">
+    <rect x="0" y="0" width="390" height="140" rx="100"
+          fill="none" stroke="purple" stroke-width="5" />
+  </g>
+</svg>

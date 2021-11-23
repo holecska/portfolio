@@ -1,0 +1,46 @@
+.footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+
+  &__container {
+    display: grid;
+    margin-bottom: 5rem;
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 3.5rem;
+  }
+  &__element {
+    display: flex;
+    margin: 2rem auto;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: $color-blue;
+
+    &--link {
+      font-size: 4.5rem;
+      margin: auto 2.5rem;
+    }
+  }
+
+  &__contact-type {
+    font-size: 2rem;
+    color: $color-blue;
+  }
+
+  &__link,
+  &:link,
+  &:visited{
+    text-decoration: none;
+    color: $color-blue;
+  }
+}

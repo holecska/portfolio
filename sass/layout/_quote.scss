@@ -1,0 +1,28 @@
+.quotes {
+  margin: 10rem 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  color: $color-white;
+  position: relative;
+  font-weight: bold;
+  width: 55%;
+  line-height: 2;
+  quotes: "“" "”" "‘" "’";
+
+  &::before {
+    content:open-quote;
+    position: absolute;
+    font-size: 20rem;
+    top: -15rem;
+    left: -15rem;
+    z-index: -1;
+    color: hsla(0, 0%, 100%, 1)
+  }
+}

@@ -1,0 +1,46 @@
+// COLOR VARIABLES
+$color-blue: #002b3c;
+$color-black: #000000;
+$color-yellow: #dede37;
+$color-green: #54db63;
+$color-white: #fff;
+
+// FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+
+//MEDIA QUERIES
+$bp-large: 75em; //1200px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-xs: 26.25em; // 600px
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  background-image: linear-gradient(to right, $color-black 55%, $color-blue);
+}
+
+// .container {
+//   display: grid;
+//   grid-template-columns: [contact-start] 25% [contact-end chat-start] 75% [chat-end];
+//   @media only screen and (max-width: $bp-large) {
+//     grid-template-columns: [contact-start] 35% [contact-end chat-start] 65% [chat-end];
+//   }
+//   @media only screen and (max-width: $bp-small) {
+//     grid-template-columns: 100%;
+//     grid-template-rows: 100%;
+//   }
+// }

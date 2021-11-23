@@ -1,0 +1,48 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Portfolio Page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start:css": "node-sass sass/main.scss dist/css/style.css",
+    "start:webpack": "webpack serve --mode development --open",
+    "start": "npm-run-all --parallel start:css start:webpack watch:sass",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-fonts.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last  5 versions\" css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holecska/Portfolio-Page.git"
+  },
+  "author": "Adam Holecska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holecska/Portfolio-Page/issues"
+  },
+  "homepage": "https://github.com/holecska/Portfolio-Page#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "concat": "^1.0.3",
+    "core-js": "^3.10.1",
+    "html-webpack-plugin": "^5.3.1",
+    "install": "^0.13.0",
+    "node-sass": "^5.0.0",
+    "npm": "^7.9.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.1",
+    "regenerator-runtime": "^0.13.7",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

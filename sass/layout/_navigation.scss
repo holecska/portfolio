@@ -1,0 +1,54 @@
+.navigation {
+  width: 100%;
+  background-color: transparent;
+  color: $color-white;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 0.4s ease-out;
+  z-index: 1000;
+
+  &__list {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__item{
+    float: right;
+  }
+
+  &__link,
+  &:link,
+  &:visited{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      background-image: linear-gradient(to right, $color-yellow, $color-green);
+      -webkit-background-clip: text;
+      color: transparent;
+      transform: scale(1.2);
+    }
+    }
+}
+
+.navbar-sticky {
+  background-color: $color-white;
+
+  &__link{
+  &:link,
+  &:visited{
+      color: $color-blue;
+      &:hover {
+        color: transparent;
+      }
+    }
+  }
+}
