@@ -4,7 +4,9 @@
   "description": "Portfolio Page",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    "dev": "webpack --mode development --open",
+    "start": "node server.js", // serves the application
+    "heroku-postbuild": "webpack -p", // runs after installation
     "build": "webpack --mode production",
     "start:css": "node-sass sass/main.scss dist/css/style.css",
     "start:webpack": "webpack serve --mode development --open",
