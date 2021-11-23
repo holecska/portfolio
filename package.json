@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/holecska/Portfolio-Page.git"
+    "url": "git+https://github.com/holecska/portfolio.git"
   },
   "author": "Adam Holecska",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/holecska/Portfolio-Page/issues"
+    "url": "https://github.com/holecska/portfolio/issues"
   },
-  "homepage": "https://github.com/holecska/Portfolio-Page#readme",
+  "homepage": "https://github.com/holecska/portfolio#readme",
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@babel/preset-env": "^7.13.15",
