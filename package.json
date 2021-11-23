@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "start:css": "node-sass sass/main.scss dist/css/style.css",
     "start:webpack": "webpack serve --mode development --open",
-    "start": "npm-run-all --parallel start:css start:webpack watch:sass",
+    "start-local": "npm-run-all --parallel start:css start:webpack watch:sass",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
