@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "description": "Portfolio Page",
-  "main": "index.js",
+  "main": "dist/js/bundle.js",
   "scripts": {
     "dev": "webpack --mode development --open",
     "start": "node server.js",
@@ -18,6 +18,10 @@
     "prefix:css": "postcss --use autoprefixer -b \"last  5 versions\" css/style.concat.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "^7.9.0"
   },
   "repository": {
     "type": "git",
@@ -50,6 +54,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "npm": "^7.9.0",
-    "node": "^17.1.0"
+    "node": "^12.x"
   }
 }
